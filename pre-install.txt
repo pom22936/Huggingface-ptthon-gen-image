@@ -1,0 +1,7 @@
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install diffusers transformers torch accelerate safetensors
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip3 freeze > requirements.txt
